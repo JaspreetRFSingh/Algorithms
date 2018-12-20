@@ -12,6 +12,7 @@ public class BubbleSort {
                     arr[j+1] = temp; 
                 } 
     } 
+	
 	static void printArray(int[] arr) {
 		int n = arr.length;
 		for(int i=0 ;i <n; i++) {
