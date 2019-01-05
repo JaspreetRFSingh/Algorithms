@@ -35,12 +35,8 @@ class Graph{
 }
 
 public class JourneyToTheMoon {
-
-	
 	public static void main(String[] args) {
-		
 		Scanner in = new Scanner(System.in);
-        
         int noa = in.nextInt();
         Graph graph = new Graph(noa);
         int nop = in.nextInt();
@@ -48,8 +44,7 @@ public class JourneyToTheMoon {
             int source = in.nextInt();
             int destination = in.nextInt();
             graph.addEdge(source,destination);
-        }
-        
+        }   
         boolean[] seen = new boolean[noa];
         List<Integer> countries = new ArrayList<Integer>();
         long combinations = 0;
@@ -66,5 +61,4 @@ public class JourneyToTheMoon {
         System.out.println(combinations);
         in.close();
 	}
-
 }
