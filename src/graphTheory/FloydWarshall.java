@@ -33,8 +33,6 @@ public class FloydWarshall {
 	}
 	
 	public static void main(String[] args) {
-		
-		
 		int[][] distances = {{0,3,max,5}, {1,0,1,4}, {max,max,0,7}, {max,8,1,0}};
 		System.out.println("Initial Graph nodes' distances: ");
 		printDistances(distances);
