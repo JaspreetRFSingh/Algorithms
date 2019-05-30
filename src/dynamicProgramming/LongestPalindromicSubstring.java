@@ -30,7 +30,6 @@ public class LongestPalindromicSubstring {
 		int max=1;
 		for(int i=0; i<strLen; i++) {
 			for(int j=i; j<strLen; j++) {
-				System.out.println(str.substring(i, j+1));
 				if(isPalindrome(str.substring(i, j+1))) {
 					plTable[i][j] = true;
 					String tempresult = str.substring(i, j+1);
@@ -48,9 +47,6 @@ public class LongestPalindromicSubstring {
 	
 	public static void main(String[] args) {
 		
-//		System.out.println(isPalindrome("aba"));
-//		String strr="jaspreet";
-		//System.out.println(strr.substring(1, 4));
 		System.out.println(longestPalindrome("forgeeksskeegfor"));
 
 	}
